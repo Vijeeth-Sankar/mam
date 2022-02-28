@@ -305,29 +305,167 @@
     font-size: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
     font-family: Red Hat Display;
     font-weight: bold;
 }
 
-#experence {
+#wor {
     position: relative;
-    background-color: red;
     height: 90vh;
-    width: 100%;
-    margin-left: 1px;
     overflow: hidden;
     overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+#wor::-webkit-scrollbar {
+    display: none;
+}
+
+#lin {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    width: 1vh;
+    height: 180vh;
+    border-radius: 50px;
+    z-index: 20;
+    background-color: white;
+}
+
+#exper {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    width: 60vh;
+    align-items: center;
+}
+
+#teacher {
+    height: 50vh;
+    width: 90vh;
+    background-color: transparent;
+    border-radius: 50px;
+    font-family: Red Hat Display;
+}
+
+#deta {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+    background-color: transparent;
+    height: 50px;
+    margin-left: 150px;
+    color: white;
+    z-index: 30;
+    white-space: nowrap;
+}
+
+#deta1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: transparent;
+    height: 100px;
+    color: white;
+    z-index: 30;
+}
+
+#ellis {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #C30A8F;
+}
+
+#deta h4,
+#ellis,
+h2 {
+    padding: 10px;
+}
+
+#deta1 {
+    margin-left: -210px;
+}
+
+#deta1 #ellis {
     padding: 20px;
 }
 
-#experence-line {
-    position: absolute;
-    width: 2px;
-    height: 100vh;
+#deta1 #ellis,
+h5 {
+    margin-right: 55px;
+}
+
+#school {
     background-color: transparent;
-    left: 50%;
+    height: 200px;
+    margin-top: 300px;
+    margin-left: -100px;
+    white-space: nowrap;
+    background: url('../asset/school.png');
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#fgf #school {
+    background: url('../asset/admi.png');
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#school1 {
+    background-color: transparent;
+    height: 200px;
+    margin-top: 300px;
+    margin-left: -600px;
+    white-space: nowrap;
+}
+
+#school p {
+    white-space: pre-wrap;
+}
+
+#school1 p {
+    white-space: pre-wrap;
+}
+
+#fgf {
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+#deta1 #school1 {
+    background: url('../asset/cam.png');
+    border-radius: 10px;
+}
+
+#lef2 {
+    margin-left: -100px;
+}
+
+#certified {
+    height: 100vh;
+    width: 100%;
+    background: url('../asset/certifiedback.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -368,8 +506,70 @@
         top: 25vh;
         height: 350px;
     }
-    #experence-line {
-        left: 0%;
+    #teacher {
+        width: 40vh;
+        height: 40vh;
+    }
+    #lin {
+        height: 160vh;
+        left: 5%;
+    }
+    #teacher #ellis,
+    h4,
+    h2 {
+        position: absolute;
+    }
+    #teacher #ellis {
+        left: 1%;
+    }
+    #teacher h4 {
+        top: 50%;
+        left: 10%;
+    }
+    #teacher h2 {
+        left: 10%;
+    }
+    #deta1 {
+        background-color: transparent;
+        margin-left: 0px;
+    }
+    #deta1 h4 {
+        margin-left: 25px;
+        margin-top: -20px;
+    }
+    #deta1 h5 {
+        margin-top: 150px;
+        margin-left: 40px;
+    }
+    #deta {
+        margin-left: 0px;
+        white-space: nowrap;
+    }
+    #deta #school {
+        margin-left: 30px;
+    }
+    #deta1 h5 {
+        margin-right: 430px;
+        margin-top: 130px;
+    }
+    #deta1 #school1 {
+        background-color: transparent;
+        margin-left: -580px;
+        margin-top: 380px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #lef2 #deta1 #school1 {
+        background-color: transparent;
+        margin-left: -550px;
+        margin-top: 350px;
+    }
+    #lef2 {
+        margin-left: 10px;
+    }
+    #fgf {
+        margin-top: 50px;
     }
 }
 
@@ -405,6 +605,19 @@
         background-color: transparent;
         top: 28vh;
         height: 450px;
+    }
+    #teacher {
+        width: 50vh;
+        height: 50vh;
+    }
+    #deta {
+        margin-left: 2vh;
+    }
+    #deta1 {
+        margin-left: -25vh;
+    }
+    #fgf {
+        margin-left: 6vh;
     }
 }
 

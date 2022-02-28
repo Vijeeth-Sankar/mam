@@ -9,7 +9,6 @@ import Sphere from "./Animated";
 import cir from "./asset/circlre.png";
 import tri from "./asset/tri.png";
 import reat from "./asset/rect.png";
-import line from "./asset/Line.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -146,19 +145,90 @@ export const First = () => {
 
         <Container fluid='true' id='work'>
             <Row id='work-title'>
-                Work Experence
-            </Row>
-            <Row xxl='true' id='experence'>
-            <Col id='experence-line'>
-                <img src={line} alt="" />
+                Work Experience
+            </Row> 
+            <Row id="wor">
+                
+            <Col id='exper'>
+            <div id='lin'>
+                </div>
+                <Row id='teacher'>
+                    <Col id='deta'>
+                    <h4>2003 to 2006</h4>
+                    <div id='ellis'></div>
+                    <h2>Teacher</h2>
+                    <Row style={{ width: '18rem' }} id='school'>
+                            <p>
+                            Worked as Computer Science Teacher Vignesh Sri Renga Matriculation Higher Secondary 
+                            School , Srirangam. From 2003 to 2006 (3 yrs).
+
+                            </p>
+                    </Row>
+                    </Col>
+                    
+                </Row>
+                <Row id='teacher'>
+                <Col id='deta1'>
+                    <h4>Professor & Research Departmen</h4>
+                    <div id='ellis'></div>
+                    <h5>2018 to Present</h5>
+                    <Row style={{ width: '18rem' }} id='school1'>
+                        <p>
+                        Working as an Assistant Professor, PG & Research Department of Computer Science, Srimad Andavan Arts & Science College ,Tiruchirappalli, from June 2007 
+                        to Aug 2017 and from June 2018 to Till date (13 yrs 4 months) .
+
+                        </p>
+                    </Row>
+                    </Col>
+                </Row>
+                <Row id='teacher'>
+                <div id="fgf">
+                <Col id='deta'>
+                    <h4>2013 to 2016</h4>
+                    <div id='ellis'></div>
+                    <h2>Administere</h2>
+                    <Row style={{ width: '18rem' }} id='school'>
+                            <p>
+                            Administered the Department and Coordinated activities of the department from 2016 to March 2021 andwasadelegatedhead of Business Process Outsourcing from 2013 to 2016.
+                            </p>
+                    </Row>
+                    </Col>
+                </div>
+                </Row>
+                <Row id='teacher'>
+                    <div id='lef2'>
+                        <Col id='deta1'>
+                        <h4>Internal Quality Assurance Cell</h4>
+                        <div id='ellis'></div>
+                        <h5> 2015 to 2017</h5>
+                        <Row style={{ width: '18rem' }} id='school1'>
+                            <p>
+                            Member of IQAC and worked as an internal auditor and prepared Annual Quality Assurance Report from 2015 to 2017.
+                            </p>
+                        </Row>
+                        </Col>
+                     </div>
+                </Row>
             </Col>
             </Row>
         </Container>
+            <Container fluid='true' id='certified'>
+                adsf
+            </Container>
         </Container>
     </div>
     </>
   )
 }
+
+
+// <h2>2003 to 2006</h2>
+//                     <h1>Teacher</h1>
+//                     <div id='ellis'></div>
+//                     <Card id='scholl'>
+//                     Worked as Computer Science Teacher Vignesh Sri Renga Matriculation Higher Secondary 
+//                     School , Srirangam. From 2003 to 2006 (3 yrs).
+//                     </Card>
 
 
 
