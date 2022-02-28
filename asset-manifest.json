@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mam/static/css/main.319d7bce.css",
+    "main.css": "/mam/static/css/main.d6692c15.css",
     "main.js": "/mam/static/js/main.18dd40da.js",
     "static/js/787.51af9efe.chunk.js": "/mam/static/js/787.51af9efe.chunk.js",
     "static/media/certifiedback.jpg": "/mam/static/media/certifiedback.5c0bfdae1f46776c5143.jpg",
@@ -11,12 +11,12 @@
     "static/media/school.png": "/mam/static/media/school.830dbd1ce4c3515c0de9.png",
     "static/media/triangle.png": "/mam/static/media/triangle.96ca91c7fa698e158413.png",
     "index.html": "/mam/index.html",
-    "main.319d7bce.css.map": "/mam/static/css/main.319d7bce.css.map",
+    "main.d6692c15.css.map": "/mam/static/css/main.d6692c15.css.map",
     "main.18dd40da.js.map": "/mam/static/js/main.18dd40da.js.map",
     "787.51af9efe.chunk.js.map": "/mam/static/js/787.51af9efe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.319d7bce.css",
+    "static/css/main.d6692c15.css",
     "static/js/main.18dd40da.js"
   ]
 }
