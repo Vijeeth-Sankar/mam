@@ -8,21 +8,24 @@ import { OrbitControls} from '@react-three/drei';
 import Sphere from "./Animated";
 import cir from "./asset/circlre.png";
 import tri from "./asset/tri.png";
+import swipe from "./asset/swiper.svg";
 import reat from "./asset/rect.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
+import "swiper/css/effect-creative";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Pagination,EffectCards,EffectCoverflow, EffectCreative } from "swiper";
 
 export const First = () => {
   return (
       <>
     <div>
-        <Container fluid='true' id='back'>
+    <Container fluid='true' id='back'>
         <Navbar variant="dark" expand={false}>
             <Container fluid>
                 <Navbar.Brand href="#">   </Navbar.Brand>
@@ -37,8 +40,11 @@ export const First = () => {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Nav.Link href="#action1">Home</Nav.Link>
-                    <Nav.Link href="#action2">Link</Nav.Link>
+                    <Nav.Link href="#main">Home</Nav.Link>
+                    <Nav.Link href="#second">Qualification</Nav.Link>
+                    <Nav.Link href="#work">work</Nav.Link>
+                    <Nav.Link href="#second">Link</Nav.Link>
+                    <Nav.Link href="#second">Link</Nav.Link>
                     </Nav>
                 </Offcanvas.Body>
                 </Navbar.Offcanvas>
@@ -169,7 +175,7 @@ export const First = () => {
                 </Row>
                 <Row id='teacher'>
                 <Col id='deta1'>
-                    <h4>Professor & Research Departmen</h4>
+                    <h4>Professor & Research Department</h4>
                     <div id='ellis'></div>
                     <h5>2018 to Present</h5>
                     <Row style={{ width: '18rem' }} id='school1'>
@@ -212,10 +218,96 @@ export const First = () => {
             </Col>
             </Row>
         </Container>
-            <Container fluid='true' id='certified'>
-                adsf
-            </Container>
+        <Container fluid='true' id='certified'>
+            <Row id='work-title'>
+                Ceritified Skill
+            </Row> 
+            <Container>
+            <Swiper
+                id='cards2'
+                effect={"cards"}
+                grabCursor={true}
+                modules={[EffectCards]}
+                
+                className="mySwiper"
+            >
+                <SwiperSlide id='cards3'>Slide 1</SwiperSlide>
+                <SwiperSlide id='cards3'>Slide 2</SwiperSlide>
+                <SwiperSlide id='cards3'>Slide 3</SwiperSlide>
+                <SwiperSlide id='cards3'>Slide 4</SwiperSlide>
+                <SwiperSlide id='cards3'>Slide 5</SwiperSlide>
+                <SwiperSlide id='cards3'>Slide 6</SwiperSlide>
+            </Swiper>
         </Container>
+    </Container>
+    <Container  fluid='true' id='Book'>
+        <Row id='work-title'>
+                Book
+        </Row> 
+        <Container fluid='true'>
+                <Swiper
+                effect={"coverflow"}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={"auto"}
+                coverflowEffect={{
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+                }}
+                pagination={true}
+                modules={[EffectCoverflow, Pagination]}
+                className="mySwiper"
+            >
+                    <SwiperSlide id="card4">PALP-Virtual Machine Migration in Green Cloud Computing</SwiperSlide>
+                    <SwiperSlide id="card4">“E2SMT: Energy Efficient Security Management Technique in Mobile Ad Hoc Network</SwiperSlide>
+                    <SwiperSlide id="card4">Application Of Machine Learning Techniques In Intrusion Detection System- A Literature Review</SwiperSlide>
+                    <SwiperSlide id="card4">“AKCSS: Asymmetric Key Cryptography based on Secret Sharing in Mobile Adhoc Network</SwiperSlide>
+                    <SwiperSlide id="card4">Intrusion Detection System Using Artificial Intelligence Techniques – A Literature Survey</SwiperSlide>
+                    <SwiperSlide id="card4">Energy Efficient Game Based Node Clustering Algorithm for MANET</SwiperSlide>
+                    <SwiperSlide id="card4">“Securing Patient Data Access using Segmented Key Management Approach</SwiperSlide>
+            </Swiper>
+        </Container>
+    </Container>
+    <Container fluid='true' id="awards">
+        <Row id='work-title'>
+            Awards
+        </Row>
+        <Row id='swipe'>
+            swipe left to see Awards<img src={swipe} alt="" />
+        </Row>
+        <Container>
+        <Swiper
+            id='wiper'
+            grabCursor={true}
+            effect={"creative"}
+            creativeEffect={{
+            prev: {
+                shadow: true,
+                translate: [0, 0, -400],
+            },
+            next: {
+                translate: ["100%", 0, 0],
+            },
+            }}
+            modules={[EffectCreative]}
+            className="mySwiper"
+        >
+            <SwiperSlide id='card5'>Slide 1</SwiperSlide>
+            <SwiperSlide id='card5'>Slide 2</SwiperSlide>
+            <SwiperSlide id='card5'>Slide 3</SwiperSlide>
+            <SwiperSlide id='card5'>Slide 4</SwiperSlide>
+            <SwiperSlide id='card5'>Slide 5</SwiperSlide>
+            <SwiperSlide id='card5'>Slide 6</SwiperSlide>
+            <SwiperSlide id='card5'>Slide 7</SwiperSlide>
+            <SwiperSlide id='card5'>Slide 8</SwiperSlide>
+            <SwiperSlide id='card5'>Slide 9</SwiperSlide>
+        </Swiper>
+        </Container>
+    </Container>
+    </Container>
     </div>
     </>
   )
