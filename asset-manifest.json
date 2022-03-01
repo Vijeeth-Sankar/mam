@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/mam/static/css/main.d6692c15.css",
-    "main.js": "/mam/static/js/main.18dd40da.js",
+    "main.css": "/mam/static/css/main.6be3a7d4.css",
+    "main.js": "/mam/static/js/main.f570e6b8.js",
     "static/js/787.51af9efe.chunk.js": "/mam/static/js/787.51af9efe.chunk.js",
     "static/media/certifiedback.jpg": "/mam/static/media/certifiedback.5c0bfdae1f46776c5143.jpg",
-    "static/media/work.png": "/mam/static/media/work.8a550e75ca5c435c3ea2.png",
+    "static/media/ba.jpg": "/mam/static/media/ba.7e5e6234e84827257878.jpg",
+    "static/media/awardsback.jpg": "/mam/static/media/awardsback.3556dad769f10064b802.jpg",
     "static/media/background.jpg": "/mam/static/media/background.d8f28ed2b188fef849db.jpg",
+    "static/media/bookback.jpg": "/mam/static/media/bookback.c7e9b830279e590691e4.jpg",
     "static/media/cam.png": "/mam/static/media/cam.7aedd05e3e15574cea63.png",
     "static/media/admi.png": "/mam/static/media/admi.7252b7a2635985dfe55d.png",
     "static/media/school.png": "/mam/static/media/school.830dbd1ce4c3515c0de9.png",
     "static/media/triangle.png": "/mam/static/media/triangle.96ca91c7fa698e158413.png",
+    "static/media/swiper.svg": "/mam/static/media/swiper.3ad166fb7dc67dee7daef4a7e032e859.svg",
     "index.html": "/mam/index.html",
-    "main.d6692c15.css.map": "/mam/static/css/main.d6692c15.css.map",
-    "main.18dd40da.js.map": "/mam/static/js/main.18dd40da.js.map",
+    "main.6be3a7d4.css.map": "/mam/static/css/main.6be3a7d4.css.map",
+    "main.f570e6b8.js.map": "/mam/static/js/main.f570e6b8.js.map",
     "787.51af9efe.chunk.js.map": "/mam/static/js/787.51af9efe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6692c15.css",
-    "static/js/main.18dd40da.js"
+    "static/css/main.6be3a7d4.css",
+    "static/js/main.f570e6b8.js"
   ]
 }
