@@ -10,6 +10,10 @@ import cir from "./asset/circlre.png";
 import tri from "./asset/tri.png";
 import swipe from "./asset/swiper.svg";
 import reat from "./asset/rect.png";
+import java from "./asset/java.svg";
+import python from "./asset/python.svg";
+import cpp from "./asset/cpp.svg";
+import html from "./asset/html.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -20,6 +24,7 @@ import "swiper/css/effect-creative";
 
 // import required modules
 import { Pagination,EffectCards,EffectCoverflow, EffectCreative } from "swiper";
+import Contactus from './email';
 
 export const First = () => {
   return (
@@ -28,7 +33,7 @@ export const First = () => {
     <Container fluid='true' id='back'>
         <Navbar variant="dark" expand={false}>
             <Container fluid>
-                <Navbar.Brand href="#">   </Navbar.Brand>
+                <Navbar.Brand id='navico' href="#">   </Navbar.Brand>
                 <Navbar.Toggle aria-controls="offcanvasNavbar" />
                 <Navbar.Offcanvas
                 id="offcanvasNavbar"
@@ -40,11 +45,13 @@ export const First = () => {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Nav.Link href="#main">Home</Nav.Link>
-                    <Nav.Link href="#second">Qualification</Nav.Link>
-                    <Nav.Link href="#work">work</Nav.Link>
-                    <Nav.Link href="#second">Link</Nav.Link>
-                    <Nav.Link href="#second">Link</Nav.Link>
+                    <Nav.Link id='navcol' href="#main">Home</Nav.Link>
+                    <Nav.Link id='navcol' href="#second">Qualification</Nav.Link>
+                    <Nav.Link id='navcol' href="#work">work</Nav.Link>
+                    <Nav.Link id='navcol' href="#certified">Ceritified Skill</Nav.Link>
+                    <Nav.Link id='navcol' href="#Book">Books</Nav.Link>
+                    <Nav.Link id='navcol' href="#awards">Awards</Nav.Link>
+                    <Nav.Link id='navcol' href="#let">About</Nav.Link>
                     </Nav>
                 </Offcanvas.Body>
                 </Navbar.Offcanvas>
@@ -222,7 +229,7 @@ export const First = () => {
             <Row id='work-title'>
                 Ceritified Skill
             </Row> 
-            <Container>
+            <Container xxl='true'>
             <Swiper
                 id='cards2'
                 effect={"cards"}
@@ -306,6 +313,35 @@ export const First = () => {
             <SwiperSlide id='card5'>Slide 9</SwiperSlide>
         </Swiper>
         </Container>
+    </Container>
+    <Container fluid='true' id='let'>
+        <Row id='work-title'>
+            Let's Connect
+        </Row>
+        <Row id='roundimg'>
+            <Col>
+                <Card id='ring'>
+                    <img src={java} alt="" />
+                    <img src={python} alt="" />
+                    <img src={cpp} alt="" />
+                    <img src={html} alt="" />
+                    <Card id='ring-box'/>
+                </Card>
+            </Col>
+            <Col>
+                <Row id='get'>
+                    Get Touch<br/>with me
+                    <Contactus />
+                </Row>
+            </Col>
+        </Row>
+        <Row fluid='true' id='links'>
+            <Col md={4}><p>©® 2022 Sughasiny </p></Col>
+            <Col md={{ span: 4, offset: 4 }}>
+                <a href="#">Email</a>
+                <a href="#">Linkedin</a>
+            </Col>
+        </Row>
     </Container>
     </Container>
     </div>

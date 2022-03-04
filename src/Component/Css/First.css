@@ -16,8 +16,20 @@
     width: 100%;
 }
 
+#navcol {
+    color: white;
+    text-decoration: none;
+}
+
 #offcanvasNavbar {
-    color: black;
+    font-size: 20px;
+    color: white;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.185);
+}
+
+#offcanvasNavbarLabel {
+    background-color: transparent;
 }
 
 #one {
@@ -553,7 +565,7 @@ h5 {
 #awards #swipe {
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 25px;
     font-family: Red Hat Display;
 }
 
@@ -564,6 +576,96 @@ h5 {
 #wiper {
     width: 400px;
     height: 400px;
+}
+
+#let {
+    background: url('../asset/letback.jpg');
+    height: fit-content;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+#let #work-title {
+    padding: 40px;
+    font-family: Red Hat Display;
+}
+
+#roundimg {
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+#ring {
+    position: relative;
+    border: 3px solid white;
+    width: 35rem;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-left: -200px;
+}
+
+#ring img {
+    position: absolute;
+    z-index: 10;
+}
+
+#ring img:nth-child(1) {
+    top: -5%;
+    left: 60%;
+}
+
+#ring img:nth-child(2) {
+    top: 20%;
+    left: 90%;
+}
+
+#ring img:nth-child(3) {
+    top: 80%;
+    left: 82%;
+}
+
+#ring img:nth-child(4) {
+    top: 95%;
+    left: 40%;
+}
+
+#ring-box {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+}
+
+#get {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    font-family: Red Hat Display;
+    color: white;
+    margin-right: 20vh;
+    padding: 20px;
+}
+
+#links {
+    margin-top: 50px;
+    border-top: 2px solid white;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+#links a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
 }
 
 
@@ -691,6 +793,9 @@ h5 {
         height: 280px;
         margin-top: 100px;
     }
+    #get {
+        margin-right: 0vh;
+    }
 }
 
 
@@ -744,6 +849,9 @@ h5 {
     }
     #card4 {
         width: 400px;
+    }
+    #get {
+        margin-right: 0vh;
     }
 }
 
