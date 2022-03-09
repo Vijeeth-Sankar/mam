@@ -1,19 +1,13 @@
 import React from 'react';
 import { Col, Container, Nav, Navbar, Offcanvas, Row,Card } from 'react-bootstrap';
-import './Css/First.css'
-import Triangle from './asset/triangle.png';
-import cirlcle from './asset/circle.png'
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls} from '@react-three/drei';
-import Sphere from "./Animated";
-import cir from "./asset/circlre.png";
-import tri from "./asset/tri.png";
+import './Css/First.css';
+import cirlcle from './asset/circle.png';
 import swipe from "./asset/swiper.svg";
-import reat from "./asset/rect.png";
 import java from "./asset/java.svg";
 import python from "./asset/python.svg";
 import cpp from "./asset/cpp.svg";
 import html from "./asset/html.svg";
+import mess from "./asset/mess.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -25,13 +19,14 @@ import "swiper/css/effect-creative";
 // import required modules
 import { Pagination,EffectCards,EffectCoverflow, EffectCreative } from "swiper";
 import Contactus from './email';
+import { Book } from './Book';
 
 export const First = () => {
   return (
       <>
     <div>
-    <Container fluid='true' id='back'>
-        <Navbar variant="dark" expand={false}>
+    <Container fluid='true' id="back">
+        <Navbar variant="light" expand={false}>
             <Container fluid>
                 <Navbar.Brand id='navico' href="#">   </Navbar.Brand>
                 <Navbar.Toggle aria-controls="offcanvasNavbar" />
@@ -57,31 +52,23 @@ export const First = () => {
                 </Navbar.Offcanvas>
             </Container>
         </Navbar>
-        <Container>
+        <Container fluid="true">
         <Row id='main'>
-            <Container id='element'>
-                <img id='circ' src={cir} alt="" />
-                <img id='tri' src={tri} alt="" />
-                <img id='rect' src={reat} alt="" />
-            </Container>
-            <Col id='one'>
-                <Row id='Box'>
-                    <img src={cirlcle} alt="" />
-                    <p>I'm Sughasiny</p>
-                    <p>Let's see my talent</p>
-                </Row>
-                <Row id='in-two'>
-                    <img id='img' src={Triangle} alt="" />
-                    <p>Get <br/>Touch in <br/>with me</p>
-                </Row>
+            <Col> 
+                <Container id="box" className='d-flex justify-content-center m-3'>
+                <Card id="box-line" className="p-4">
+                <Card.Body>
+                    <Card.Title id="sug">I'm Sughasiny</Card.Title>                   
+                    <Card.Text id="sugp">
+                    To work in a position, that will provide me a good platform where I deploy my creative & administration skillsand knowledgetowardsmy personalenhancement andalsoforthebetter prospect of theorganization.
+                    </Card.Text>
+                    <Card.Link href="#" id="se">let's see</Card.Link>
+                </Card.Body>
+                </Card>
+                </Container>
             </Col>
-            <Col id='two'>
-                <Canvas>
-                    <OrbitControls enableZoom={false} />
-                    <ambientLight intensity={1}/>
-                    <directionalLight position={[7,5,1]} intensity ={1}/>
-                    <Sphere/>
-                </Canvas>
+            <Col id="mess">
+                <img src={mess} alt="" />
             </Col>
         </Row>
         </Container>
@@ -247,42 +234,12 @@ export const First = () => {
             </Swiper>
         </Container>
     </Container>
-    <Container  fluid='true' id='Book'>
-        <Row id='work-title'>
-                Book
-        </Row> 
-        <Container fluid='true'>
-                <Swiper
-                effect={"coverflow"}
-                grabCursor={true}
-                centeredSlides={true}
-                slidesPerView={"auto"}
-                coverflowEffect={{
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-                }}
-                pagination={true}
-                modules={[EffectCoverflow, Pagination]}
-                className="mySwiper"
-            >
-                    <SwiperSlide id="card4">PALP-Virtual Machine Migration in Green Cloud Computing</SwiperSlide>
-                    <SwiperSlide id="card4">“E2SMT: Energy Efficient Security Management Technique in Mobile Ad Hoc Network</SwiperSlide>
-                    <SwiperSlide id="card4">Application Of Machine Learning Techniques In Intrusion Detection System- A Literature Review</SwiperSlide>
-                    <SwiperSlide id="card4">“AKCSS: Asymmetric Key Cryptography based on Secret Sharing in Mobile Adhoc Network</SwiperSlide>
-                    <SwiperSlide id="card4">Intrusion Detection System Using Artificial Intelligence Techniques – A Literature Survey</SwiperSlide>
-                    <SwiperSlide id="card4">Energy Efficient Game Based Node Clustering Algorithm for MANET</SwiperSlide>
-                    <SwiperSlide id="card4">“Securing Patient Data Access using Segmented Key Management Approach</SwiperSlide>
-            </Swiper>
-        </Container>
-    </Container>
+    <Book/>
     <Container fluid='true' id="awards">
         <Row id='work-title'>
             Awards
         </Row>
-        <Row id='swipe'>
+        <Row id='swipe'> 
             swipe left to see Awards<img src={swipe} alt="" />
         </Row>
         <Container>
