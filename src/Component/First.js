@@ -60,7 +60,7 @@ export const First = () => {
                 <Card.Body>
                     <Card.Title id="sug">I'm Sughasiny</Card.Title>                   
                     <Card.Text id="sugp">
-                    To work in a position, that will provide me a good platform where I deploy my creative & administration skillsand knowledgetowardsmy personalenhancement andalsoforthebetter prospect of theorganization.
+                    To work in a position, that will provide me a good platform where I deploy my creative & administration skillsand knowledge towards my personal enhancement and also for the better prospect of the organization.
                     </Card.Text>
                     <Card.Link href="#" id="se">let's see</Card.Link>
                 </Card.Body>
