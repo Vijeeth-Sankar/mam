@@ -427,15 +427,16 @@ h5 {
 }
 
 #Book {
-    background: url('../asset/bookback.jpg');
+    background: rgb(156, 143, 143);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #Book #work-title {
     padding: 40px;
+    color: black;
 }
 
 #card4 {
@@ -444,7 +445,8 @@ h5 {
     height: 500px;
     border-radius: 20px;
     backdrop-filter: blur(10px);
-    color: white;
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 10px 5px #888888;
     font-size: 25px;
 }
 
@@ -594,6 +596,10 @@ h5 {
     #main {
         display: flex;
         justify-content: center;
+        height: fit-content;
+    }
+    #second {
+        height: fit-content;
     }
     #mess {
         display: none;

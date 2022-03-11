@@ -108,7 +108,7 @@ export const First = () => {
             >
                 <SwiperSlide id='swiper-back'>
                     <Card id='card' style={{ width: '18rem' }}>
-                        <p>M.Phil</p>
+                        <p>Ph.D</p>
                         <p>Computer Science</p>
                         </Card>
                 </SwiperSlide>
@@ -130,14 +130,20 @@ export const First = () => {
                 </SwiperSlide>
                 <SwiperSlide id='swiper-backfour'>
                     <Card id='card' style={{ width: '18rem' }}>
-                        <p>M.Phil</p>
-                        <p>Computer Science</p>
+                        <p>M.Sc</p>
+                        <p>Information Technology</p>
                         </Card>
                 </SwiperSlide>
                 <SwiperSlide id='swiper-backfive'>
                     <Card id='pho' style={{ width: '18rem' }}>
                         <img src={cirlcle} alt="" />
                     </Card>
+                </SwiperSlide>
+                <SwiperSlide id='swiper-backfour'>
+                    <Card id='card' style={{ width: '18rem' }}>
+                        <p>B.Sc</p>
+                        <p>Computer Science</p>
+                        </Card>
                 </SwiperSlide>
             </Swiper>
             </Row>

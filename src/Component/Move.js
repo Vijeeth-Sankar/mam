@@ -10,9 +10,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import "swiper/css/effect-creative";
+import "swiper/css/navigation";
 
 // import required modules
-import { Pagination,EffectCoverflow,} from "swiper";
+import {Navigation, Pagination,EffectCoverflow,} from "swiper";
 
 export default class Move extends Component {
   render() {
@@ -23,11 +24,12 @@ export default class Move extends Component {
         <Row id='work-title'>
                 Book
         </Row> 
-        <Container fluid='true'>
+        <Container>
                 <Swiper
                 id="sde"
                 effect={"coverflow"}
                 grabCursor={true}
+                navigation={true}
                 centeredSlides={true}
                 slidesPerView={"auto"}
                 coverflowEffect={{
@@ -38,7 +40,7 @@ export default class Move extends Component {
                 slideShadows: true,
                 }}
                 pagination={true}
-                modules={[EffectCoverflow, Pagination]}
+                modules={[Navigation,EffectCoverflow, Pagination]}
                 className="mySwiper"
                 style={{ background: 'transparent' }}
             >
